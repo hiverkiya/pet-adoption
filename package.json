@@ -1,0 +1,25 @@
+{
+  "name": "pet-adoption",
+  "version": "1.0.0",
+  "description": "Site made in Reactjs featuring pets to adopt",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+      "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiverkiya/pet-adoption.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiverkiya/pet-adoption/issues"
+  },
+  "homepage": "https://github.com/hiverkiya/pet-adoption#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^8.1.0",
+    "prettier": "^2.6.2"
+  }
+}
