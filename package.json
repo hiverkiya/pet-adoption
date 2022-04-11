@@ -4,8 +4,9 @@
   "description": "Site made in Reactjs featuring pets to adopt",
   "main": "index.js",
   "scripts": {
+    "dev": "parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-      "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,21 @@
   },
   "homepage": "https://github.com/hiverkiya/pet-adoption#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^8.1.0",
     "prettier": "^2.6.2"
-  }
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0",
+    "parcel": "^1.12.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "browserslist":[
+    "last 2 Chrome versions",
+    "IE11"
+  ]
 }
