@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom"
 import SearchParams from "./SearchParams"
+import {StrictMode} from "react"
 
 /*const App = () => {
   return React.createElement("div", {}, [
@@ -38,4 +39,4 @@ const App=()=>
 )
 }
 // ReactDOM.render(React.createElement(App), document.getElementById("root")); // Calling the component
-ReactDOM.render(<App/>, document.getElementById("root")); 
+ReactDOM.render(<StrictMode><App/></StrictMode>, document.getElementById("root")); 
