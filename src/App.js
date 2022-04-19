@@ -1,8 +1,9 @@
 import ReactDOM from "react-dom"
 import SearchParams from "./SearchParams"
-import {StrictMode} from "react"
+import {StrictMode, useState} from "react"
 import { BrowserRouter as Router,Route, Switch , Link} from "react-router-dom"
 import Details from "./Details"
+import ThemeContext from '.ThemeContext'
 /*const App = () => {
   return React.createElement("div", {}, [
     React.createElement("h1", { id: "my-brand" }, "Adopt me!"),
@@ -25,7 +26,9 @@ import Details from "./Details"
 };*/
 // We've defined the component here
 const App=()=>
-{ return(
+{ const theme = useState("pink")
+  return(
+    <ThemeContext.Provider value = {theme}>
   <div>
     
     
@@ -36,7 +39,7 @@ const App=()=>
     </header>
       <Switch>
       <Route path="/details/:id">
-        <Details/>
+        <Details theme={theme}/>
         </Route>
         <Route path="/"><SearchParams/></Route>
         </Switch>
@@ -47,6 +50,7 @@ const App=()=>
      <Pet name="Charlie" animal="Cat" breed="American Longhair"/>
 */}
   </div>
+  </ThemeContext.Provider>
 )
 }
 // ReactDOM.render(React.createElement(App), document.getElementById("root")); // Calling the component
