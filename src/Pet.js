@@ -8,6 +8,7 @@
   };
 */
   // JSX
+  import { Link } from "react-router-dom"
   const Pet = ({
 name,
 animal,
@@ -33,7 +34,7 @@ id
           {props.breed}
         </h3>
       </div>*/
-      <a href={`/details/${id}`} className="pet">
+      <Link to={`/details/${id}`} className="pet">
         <div className="image-container">
           <img src={hero} alt={name}/>
         </div>
@@ -41,7 +42,7 @@ id
           <h1>{name}</h1>
           <h2>{`${animal} - ${breed} - ${location}`}</h2>
         </div>
-      </a>
+      </Link>
     )
   }
   export default Pet
